@@ -9,17 +9,31 @@
 </head>
 <body>
     <!-- <button onclick="toFile('./file/a.pdf')">打开pdf格式文件</button> -->
-    <button id="btn">打开pdf格式文件</button>
+    <button id="btn1">打开pdf格式文件</button>
+    <button id="btn2">打开doc格式文件</button>
+    <button id="btn3">打开ppt格式文件</button>
     
 </body>
 <script>
         // function toFile() {
         //     window.open('./file/a.pdf',_system,'width=200,height=100')
         // }
-        $("#btn").click(function(){
+        $("#btn1").click(function(){
             // alert("ww")
             
             window.open('./file/a.pdf','_system','location=0')
+            // window.showModalDialog('./file/a.pdf','_system','width=900,height=500')
+        })
+        $("#btn2").click(function(){
+            // alert("ww")
+            
+            window.open('./file/a.doc','_system','location=0')
+            // window.showModalDialog('./file/a.pdf','_system','width=900,height=500')
+        })
+        $("#btn3").click(function(){
+            // alert("ww")
+            
+            window.open('./file/a.ppt','_system','location=0')
             // window.showModalDialog('./file/a.pdf','_system','width=900,height=500')
         })
             
